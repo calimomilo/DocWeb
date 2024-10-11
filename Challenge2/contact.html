@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="max-width: 350px; margin: auto; padding: 10%; text-align: right; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+
+        <nav style="text-align: center; margin-bottom: 30px;">
+            <a href="./index.html">Accueil</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+
+        <form action="">
+            <div style="margin: 10px;">
+                <label for="titre" style="margin: 10px;">Titre : </label>
+                <input type="text" name="titre" id="titre" required>
+            </div>
+
+            <div style="margin: 10px;">
+                <label for="artiste" style="margin: 10px;">Artiste : </label>
+                <input type="text" name="artiste" id="artiste" required>
+            </div>
+
+            <div style="margin: 10px;">
+                <label for="year" style="margin: 10px;">Année de parution : </label>
+                <input type="number" name="year" id="year" max="2024" value="2024" required>
+            </div>
+
+            <div style="margin: 10px;">
+                <label for="image" style="margin: 10px;">Image : </label>
+                <input type="file" name="image" id="image" required style="width: 172.8px;">
+            </div>
+            
+            <div style="margin: 10px;">
+                <label for="media" style="margin: 10px;">Type de média : </label>
+                <input list="media-list" name="media" id="media" required>
+
+                <datalist id="media-list">
+                    <option value="litérature">litérature</option>
+                    <option value="film">film</option>
+                    <option value="musique">musique</option>
+                    <option value="jeu">jeu</option>
+                </datalist>
+            </div>
+
+            <div style="margin: 10px;">
+                <label for="lien" style="margin: 10px;">Lien : </label>
+                <input type="text" name="lien" id="lien" required>
+            </div>
+
+            <div style="margin: 10px;">
+                <label for="email" style="margin: 10px;">Email : </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div style="margin: 10px;">
+                <label for="newsletter" style="margin: 10px;">S'inscrire à la newsletter</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+            </div>
+
+            <div style="text-align: center;">
+                <button>Envoyer</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
