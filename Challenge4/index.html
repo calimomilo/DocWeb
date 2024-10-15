@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratique des Sélecteurs CSS</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <!-- Section En-tête -->
+    <header>
+        <h1 class="title">Pratique des Sélecteurs CSS</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="nav-link active">Accueil</a></li>
+                <li><a href="#" class="nav-link">À propos</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="mailto:simon.pinkas@heig-vd.ch" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Introduction -->
+        <section class="intro">
+            <h2>Bienvenue à l'exercice de <span class="highlight">Sélecteurs CSS</span>. Cela vous aidera à pratiquer
+                différents types de sélecteurs, de combinateurs et à comprendre la cascade.</h2>
+            <p class="note">Note : Faites attention aux attributs de classe et d'identifiant.</p>
+        </section>
+
+        <!-- Section Contenu -->
+        <section class="content">
+            <article id="article1" class="post featured">
+                <h2>Article en Vedette</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quos minima beatae, praesentium
+                    placeat
+                    quidem laudantium officiis est eaque earum necessitatibus, sunt maiores accusamus adipisci dolor, in
+                    aperiam nesciunt aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nesciunt,
+                    eligendi
+                    pariatur, vitae obcaecati quia quisquam error id voluptatibus eius voluptate, cum quo facere culpa
+                    veniam nobis! Incidunt, fugiat voluptate!</p>
+                <a href="#" class="read-more">Lire la Suite</a>
+            </article>
+
+            <article id="article2" class="post">
+                <h2>Article Régulier</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque, nisi mollitia reprehenderit ex id
+                    fuga voluptate distinctio eos harum obcaecati ducimus cumque aliquid saepe nihil autem blanditiis,
+                    vero est?</p>
+                <a href="#" class="read-more">Lire la Suite</a>
+            </article>
+
+            <aside class="sidebar">
+                <h3>Titre de la Barre Latérale</h3>
+                <ul class="sidebar-list">
+                    <li class="list-item">Élément 1</li>
+                    <li class="list-item">Élément 2</li>
+                    <li class="list-item">Élément 3</li>
+                    <li class="list-item">Élément 4</li>
+                    <li class="list-item">Élément 5</li>
+                    <li class="list-item">Élément 6</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Section Formulaire -->
+        <section class="form-section">
+            <form action="#" method="post" id="contact-form">
+                <div class="form-field">
+                    <label for="name">Nom :</label>
+                    <input type="text" name="name" id="name" placeholder="Nom">
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Votre Email">
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" placeholder="Votre Message"></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Section Pied de Page -->
+    <footer>
+        <p>&copy; 2024 Exercice sur les Sélecteurs CSS</p>
+        <ul class="social-media">
+            <li><a href="https://facebook.com" class="social-link">Facebook</a></li>
+            <li><a href="https://twitter.com" class="social-link">Twitter</a></li>
+            <li><a href="https://instagram.com" class="social-link">Instagram</a></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+
+</html>
