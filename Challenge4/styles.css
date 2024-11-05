@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: sans-serif;
 }
 
@@ -44,7 +47,7 @@ aside li {
     margin: 0.2rem;
 }
 
-aside li:nth-of-type(2n+1) {
+aside li:nth-of-type(odd) {
     background-color: hsl(280, 80%, 40%);
     color: white;
 }
