@@ -19,10 +19,11 @@ header {
     color : white;
     text-align: center;
     padding: 1rem;
+    margin: auto; /*pas précisé*/
 }
 
 header h1 {
-    font-size: 2rem; /* jsp pk mais si je le mets dans header la taille du texte devient 2em (genre 96px au lieu de 48px*/
+    font-size: 2rem; /*subtilité si on laisse dans header ; par défaut h1 a une font-size 2em qui double la taille héritée du conteneur ; donc il faut venir overwrite la valeur dans h1 directement*/
 }
 
 #overflow {
@@ -43,6 +44,31 @@ img {
     object-fit: cover;
 }
 
+#boxes div {
+    color: white; /*pas précisé*/
+    padding: 3vw; /*pas précisé, */
+    width: 25%;
+}
+
 #boxes div p {
-    font-size: min(3vw, 2rem);
+    font-size: min(3vw, 1rem); /*changé de 2rem à 1rem pour approcher la vidéo*/ 
+}
+
+#boxes div:nth-of-type(1) {
+    background-color: #7209b7;
+}
+
+#boxes div:nth-of-type(2) {
+    margin-left: 25%;
+    background-color: #3a0ca3;
+}
+
+#boxes div:nth-of-type(3) {
+    margin-left: 50%;
+    background-color: #4361ee;
+    border: 0.25rem solid black;
+}
+
+#boxes div:nth-of-type(4) {
+    margin-left: 75%;
 }
