@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <img src="./images/logo.svg" alt="Logo de Pro Natura">
+        <img id="logo" src="./images/logo.svg" alt="Logo de Pro Natura">
         <nav>
-            <div id="nav-gen">
-                <a href="#infos-pratiques">infos pratiques</a>
-                <a href="#">programme</a>
-            </div>
-            <div id="isncription">
-                <a href="">inscription</a>
-            </div>
+            <a href="#infos-pratiques">infos pratiques</a>
+            <a href="#">programme</a>
         </nav>
+        <div id="nav-inscription">
+            <a href="">inscription</a>
+        </div>
     </header>
 
     <main>
         <h1>La nuit dévoile ses secrets à Champ-Pittet.</h1>
-        <section id="description">
+
+        <section class="image">
             <img src="./images/pond.webp" alt="image en noir et blanc d'un étang artificiel">
-            <img src="./images/path.svg" alt="un chemin jaune allant d'un rond à une croix">
+        </section>
+
+        <section id="description">
+            <img id="path" src="./images/path.svg" alt="un chemin jaune allant d'un rond à une croix">
             <p>
                 Découvrez la magie de la nuit lors de notre événement d'observation dans la réserve naturelle. Sous un ciel étoilé, plongez au cœur d'une nature préservée où les murmures de la faune nocturne et le doux clapotis de l'eau créent une atmosphère enchanteresse. Accompagnés par des guides passionnés, vous aurez l'opportunité unique d'observer des espèces rares. Une soirée qui mêle découverte, émerveillement et respect de l'environnement.
             </p>
-            <img src="./images/owl.webp" alt="image en noir et blanc d'une chouette sur un fond de forêt">
         </section>
+
+        <section class="image">
+            <img class="shadow" src="./images/owl.webp" alt="image en noir et blanc d'une chouette sur un fond de forêt">
+        </section>
+
         <section id="infos-pratiques">
             <p>
                 03 septembre 2027
@@ -37,7 +44,7 @@
                 22h - 04h30
             </p>
             <p>
-                Chemin de laCariçaie 1,
+                Chemin de la Cariçaie 1,
                 <br>
                 1400 Cheseaux-Noréaz
             </p>
@@ -46,7 +53,7 @@
     </main>
     
     <footer>
-        <p></p>
+        <p>© Pro Natura, 2027</p>
     </footer>
 </body>
 </html>
