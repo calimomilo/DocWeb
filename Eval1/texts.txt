@@ -1,0 +1,23 @@
+Textes de navigation:
+    - infos pratiques
+    - programme
+    - inscription
+
+Texte headline:
+    La nuit dévoile ses secrets à Champ-Pittet.
+
+Texte de description:
+    Découvrez la magie de la nuit lors de notre événement d'observation dans la réserve naturelle. Sous un
+    ciel étoilé, plongez au cœur d'une nature préservée où les murmures de la faune nocturne et le doux
+    clapotis de l'eau créent une atmosphère enchanteresse. Accompagnés par des guides passionnés, vous aurez
+    l'opportunité unique d'observer des espèces rares. Une soirée qui mêle découverte, émerveillement et
+    respect de l'environnement.
+
+Infos pratiques:
+    03 septembre 2027
+    22h - 04h30
+
+    Chem. de la Cariçaie 1,
+    1400 Cheseaux-Noréaz
+
+    lien google maps: https://maps.app.goo.gl/rDGREwdMZdgJcWVd6
