@@ -47,6 +47,8 @@ nav {
     color: #ffffff;
     font-weight: 800;;
     padding: 2rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav > a {
@@ -77,6 +79,9 @@ main:has(#gallery > div:hover) {
 
 #centered {
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #centered > div {
@@ -96,6 +101,9 @@ main:has(#gallery > div:hover) {
 
 #library {
     background-color: #000000;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
 }
 
 #library > div {
@@ -103,10 +111,12 @@ main:has(#gallery > div:hover) {
     border: 1px solid #000000;
     padding: 1rem;
     transition: var(--transition);
+    flex-basis: 4rem;
 }
 
 #library > div:hover {
     background-color: rgb(255,255,0);
+    flex-grow: 1;
 }
 
 #library > div > h1 {
@@ -118,6 +128,9 @@ main:has(#gallery > div:hover) {
 #gallery {
     background-color: rgb(0,255,255);
     padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 #gallery > div {
@@ -125,6 +138,8 @@ main:has(#gallery > div:hover) {
     box-shadow: var(--shadow-elevation-medium);
     margin: 2rem;
     transition: var(--transition);
+    flex-grow: 1;
+    flex-basis: 350px;
 }
 
 #gallery > div:hover {
