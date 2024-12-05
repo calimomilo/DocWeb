@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <input type="search" placeholder="Search">
+            <ul>
+                <li>
+                    <a href=""><img src="assets/icons/home.svg" alt="Home icon">Home</a>
+                </li>
+                <li class="active">
+                    <a href=""><img src="assets/icons/library.svg" alt="Libary icon">Libary</a>
+                </li>
+                <li>
+                    <a href=""><img src="assets/icons/playlists.svg" alt="Playlists icon">Playlists</a>
+                </li>
+            </ul>
+        </nav>
+        <aside id="media-bar">
+            <section class="media-controls">
+                <button>
+                    <img src="assets/icons/shuffle.svg" alt="Shuffle">
+                </button>
+                <button>
+                    <img src="assets/icons/rewind.svg" alt="Previous">
+                </button>
+                <button>
+                    <img src="assets/icons/play.svg" alt="Play/Pause">
+                </button>
+                <button>
+                    <img src="assets/icons/fast-forward.svg" alt="Next">
+                </button>
+                <button>
+                    <img src="assets/icons/repeat.svg" alt="Repeat">
+                </button>
+                </div>
+            </section>
+            <section id="currently-playing">
+                <img src="assets/covers/born-to-run.jpg" alt="Currently playing album cover">
+                <div class="song-info">
+                    <h2>Thunder Road</h2>
+                    <p>Bruce Springsteen – Born To Run</p>
+                </div>
+                <div class="song-progress"></div>
+            </section>
+            <section id="volume-control">
+                <input type="range" min="0" max="100" value="33">
+            </section>
+        </aside>
+        <section class="album-grid">
+            <figure class="album">
+                <img src="assets/covers/madvillainy.webp" alt="Madvillainy album cover">
+                <figcaption>
+                    <h3>Madvillainy</h3>
+                    <p>Madvillain</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/loveless.webp" alt="Loveless album cover">
+                <figcaption>
+                    <h3>Loveless</h3>
+                    <p>My Bloody Valentine</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/ok-computer.webp" alt="OK Computer album cover">
+                <figcaption>
+                    <h3>OK Computer</h3>
+                    <p>Radiohead</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/to-pimp-a-butterfly.webp" alt="To Pimp a Butterfly album cover">
+                <figcaption>
+                    <h3>To Pimp a Butterfly</h3>
+                    <p>Kendrick Lamar</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/the-rise-and-fall.webp" alt="Ziggy Stardust album cover">
+                <figcaption>
+                    <h3>Ziggy Stardust</h3>
+                    <p>David Bowie</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/the-black-saint.webp" alt="The Black Saint and the Sinner Lady album cover">
+                <figcaption>
+                    <h3>The Black Saint and the Sinner Lady</h3>
+                    <p>Charles Mingus</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/remain-in-light.webp" alt="Remain in Light album cover">
+                <figcaption>
+                    <h3>Remain in Light</h3>
+                    <p>Talking Heads</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/the-velvet-underground.webp" alt="The Velvet Underground album cover">
+                <figcaption>
+                    <h3>The Velvet Underground</h3>
+                    <p>The Velvet Underground</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/lift.webp" alt="Raise Yr Skinny Fists like Antennas to Heaven album cover">
+                <figcaption>
+                    <h3>Raise Yr Skinny Fists like Antennas to Heaven</h3>
+                    <p>Godspeed You Black Emperor!</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/abbey-road.webp" alt="Abbey Road album cover">
+                <figcaption>
+                    <h3>Abbey Road</h3>
+                    <p>The Beatles</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/heaven-or-las-vegas.webp" alt="Heaven or Las Vegas album cover">
+                <figcaption>
+                    <h3>Heaven or Las Vegas</h3>
+                    <p>Cocteau Twins</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/igor.webp" alt="Igor album cover">
+                <figcaption>
+                    <h3>Igor</h3>
+                    <p>Tyler the Creator</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/pet-sounds.webp" alt="Pet Sounds album cover">
+                <figcaption>
+                    <h3>Pet Sounds</h3>
+                    <p>The Beach Boys</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/songs-in-the-key.webp" alt="Songs in the Key of Life album cover">
+                <figcaption>
+                    <h3>Songs in the Key of Life</h3>
+                    <p>Stevie Wonder</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="assets/covers/a-love-supreme.webp" alt="A Love Supreme album cover">
+                <figcaption>
+                    <h3>A Love Supreme</h3>
+                    <p>John Coltrane</p>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+
+</html>
