@@ -1,5 +1,111 @@
+@font-face {
+    font-family: "Atacama";
+    src: url("./fonts/atacama-var.woff2") format(woff2) tech(variations);
+}
+
+@font-face {
+    font-family: "Swiss Now";
+    src: url("./fonts/swissNow-var.woff2") format(woff2) tech(variations);
+}
+
+@keyframes text-var {
+    from {
+        font-variation-settings: "wght" 100, "wdth" 50;
+    }
+
+    to {
+        font-variation-settings: "wght" 900, "wdth" 200;
+    }
+}
+
+:root {
+    font-size: 18px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Swiss Now', sans-serif;
+    color: black;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 0.75rem;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.upper-left {
+    grid-column: 2 / 12;
+    grid-row: 2;
+}
+
+.upper-right {
+    grid-column: 2 / 12;
+    grid-row: 2;
+    text-align: end;
+}
+
+.bottom-left {
+    grid-column: 2 / 12;
+    grid-row: 11;
+}
+
+.bottom-right {
+    grid-column: 2 / 12;
+    grid-row: 11;
+    text-align: end;
+}
+
+.center {
+    font-family: 'Atacama', serif;
+    grid-column: 3 / 11;
+    grid-row: 3 / 11;
+}
+
+#introduction {
+    background-color: hsl(315, 100%, 60%);
+}
+
+#second-page {
+    background: linear-gradient(hsl(315, 100%, 60%), white);
+}
+
+#introduction .center {
+    font-size: 8rem;
+    line-height: 7.5rem;
+    animation: text-var 3s ease infinite alternate;
+}
+
+#second-page div.center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    height: 200px;
+    opacity: 0.1;
+    transition: ease-in 0.1s;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: scale(105%);
+    transition: ease-in 0.3s;
 }
