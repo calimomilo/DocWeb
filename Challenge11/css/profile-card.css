@@ -1,0 +1,27 @@
+.profile-card-container {
+    container-type: inline-size;
+    min-width: 15rem;
+    max-width: 100%;
+}
+
+.profile-card {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "avatar"
+    "name"
+    "details"
+    "actions";
+    place-items: center;
+
+    .profile-card--avatar {
+        width: 125px;
+        height: 125px;
+    }
+
+    .profile-card--name {
+        
+    }
+}
