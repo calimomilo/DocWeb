@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Diatype";
+    src: url("../fonts/diatype-var.woff2");
+}
+
+:root {
+    --fs-sm: clamp(0.6rem, 0.41cqi + 0.52rem, 0.84rem);
+    --fs-base: clamp(0.75rem, 0.63cqi + 0.63rem, 1.13rem);
+    --fs-md: clamp(0.94rem, 0.94cqi + 0.75rem, 1.5rem);
+    --fs-lg: clamp(1.17rem, 1.38cqi + 0.9rem, 2rem);
+    --fs-xl: clamp(1.46rem, 2cqi + 1.06rem, 2.66rem);
+    --fs-xxl: clamp(1.83rem, 2.87cqi + 1.26rem, 3.55rem);
+    --fs-xxxl: clamp(2.29rem, 4.08cqi + 1.47rem, 4.73rem);
+
+    --shadow-elevation-low:
+        0px 0.3px 0.4px hsl(var(--shadow-color) / 0.01),
+        0px 1.3px 1.9px hsl(var(--shadow-color) / 0.57);
+    --shadow-elevation-medium:
+        0px 0.3px 0.4px hsl(var(--shadow-color) / 0.01),
+        -0.1px 2.2px 3.3px hsl(var(--shadow-color) / 0.36),
+        -0.2px 6.5px 9.7px hsl(var(--shadow-color) / 0.71);
+    --shadow-elevation-high:
+        0px 0.3px 0.4px hsl(var(--shadow-color) / 0.01),
+        -0.2px 5.6px 8.4px hsl(var(--shadow-color) / 0.25),
+        -0.4px 10.9px 16.3px hsl(var(--shadow-color) / 0.48),
+        -0.6px 19.4px 29px hsl(var(--shadow-color) / 0.71),
+        -1.1px 34.3px 51.2px hsl(var(--shadow-color) / 0.95);
+
+    @media (prefers-color-scheme: light) {
+        --color-background: hsl(0deg 0% 100%);
+        --color-background-highlight: hsl(0deg, 0%, 90%);
+        --color-text: hsl(222deg, 22%, 5%);
+        --color-text-muted: hsl(225, 12%, 40%);
+        --color-action: hsl(209, 78%, 61%);
+        --color-text-action: hsl(0, 0%, 100%);
+        --shadow-color: 0deg 0% 80%;
+    }
+}
+
+html {
+    font-size: 12px;
+
+    @media screen and (width > 600px) {
+        font-size: 18px;
+    }
+}
+
+
+button {
+    background: var(--color-background);
+    border: 2px solid var(--color-text-muted);
+    border-radius: 0.25rem;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-size: var(--fs-base);
+    font-family: "Diatype";
+    font-variation-settings: "wght" 600;
+    padding: 0.5rem;
+
+    &.important {
+        color: var(--color-text-action);
+        background: var(--color-action);
+        border: none;
+    }
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: "Diatype", system-ui, sans-serif;
+    font-size: var(--fs-base);
+}
+
+header {
+    @media (prefers-color-scheme: light) {
+        box-shadow: var(--shadow-elevation-medium);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        box-shadow: none;
+        border-right: 1px solid var(--color-background-highlight);
+    }
+}

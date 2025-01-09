@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    @media screen and (width > 600px) {
+        grid-template-columns: 230px 1fr;
+    }
+}
+
+header {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    overflow-y: auto;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+
+    >* {
+        flex: 1 1 auto;
+    }
+}
