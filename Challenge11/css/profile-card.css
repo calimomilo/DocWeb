@@ -16,12 +16,82 @@
     "actions";
     place-items: center;
 
+    @container (width >= 20rem) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "avatar name"
+        "details details"
+        "actions actions";
+    }
+
+    @container (width >= 40rem) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "avatar name details actions";
+    }
+
     .profile-card--avatar {
+        grid-area: avatar;
         width: 125px;
         height: 125px;
+
+        @container (width >= 40rem) {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            bottom: 5px;
+        }
     }
 
     .profile-card--name {
+        grid-area: name;
+        text-align: center;
+
+        @container (width >= 20rem) {
+            justify-self: start;
+            text-align: start;
+        }
+
+        h1 {
+            font-size: var(--fs-xl);
+            line-height: 1;
+        }
+
+        h2 {
+            font-variation-settings: "wght" 400;
+        }
+    }
+
+    .profile-card--details {
+        grid-area: details;
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        gap: 0.5rem;
         
+        div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    .profile-card--actions {
+        grid-area: actions;
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        gap: 0.5rem;
+
+        @container (width >= 20rem) {
+            flex-flow: row;
+        }
+
+        button {
+            @container (width >= 20rem) {
+                width: 100%;
+            }
+        }
     }
 }
