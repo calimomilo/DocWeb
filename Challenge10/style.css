@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Diatype;
+    src: url(./fonts/diatype-var.woff2) format(woff2) tech(variations);
+}
+
+:root {
+    --fs-sm: clamp(0.6rem, 0.41vi + 0.52rem, 0.84rem);
+    --fs-base: clamp(0.75rem, 0.63vi + 0.63rem, 1.13rem);
+    --fs-md: clamp(0.94rem, 0.94vi + 0.75rem, 1.5rem);
+    --fs-lg: clamp(1.17rem, 1.38vi + 0.9rem, 2rem);
+    --fs-xl: clamp(1.46rem, 2vi + 1.06rem, 2.66rem);
+    --fs-xxl: clamp(1.83rem, 2.87vi + 1.26rem, 3.55rem);
+    --fs-xxxl: clamp(2.29rem, 4.08vi + 1.47rem, 4.73rem);
+    --color-fond: rgb(241, 241, 241);
+    --color-fond-invert: rgb(14, 14, 14);
+    --color-text: rgb(14, 14, 14);
+    --color-text-invert: rgb(241, 241, 241);
+    --color-text-light: rgb(131, 131, 131);
+    --color-text-dark: rgb(124, 124, 124);
+    --wght-bold: 700;
+    --whitespace: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: Diatype, Arial, Helvetica, sans-serif;
+    background-color: var(--color-fond);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+header, section.hero, section.recently-added {
+    padding: var(--whitespace);
+}
+
+footer.newsletter.full-bleed {
+    padding: var(--whitespace) 0;
+}
+
+article.product p {
+    color: var(--color-text-light);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: var(--fs-lg);
+    font-variation-settings: "wght" var(--wght-bold);
+}
+
+section.hero {
+    display: flex;
+    height: 83vh;
+    flex-direction: column;
+}
+
+section.hero div.left, section.hero div.right {
+    align-self: center;
+}
+
+section.hero a {
+    font-size: var(--fs-xxxl);
+    font-variation-settings: 'wght' var(--wght-bold);
+}
+
+section.recently-added>h1, footer>h1 {
+    border-top: 1px solid var(--color-text);
+    font-size: var(--fs-base);
+    padding-top: 0.25rem;
+}
+
+div.product-grid {
+    display: grid;
+    margin: calc(4*var(--whitespace));
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--whitespace);
+    align-items: last baseline;
+}
+
+div.product-grid h1 {
+    font-size: var(--fs-md);
+}
+
+footer.newsletter {
+    background-color: var(--color-fond-invert);
+    color: var(--color-text-invert);
+}
+
+footer>h1 {
+    border-top: 1px solid var(--color-text-dark);
+    width: calc(100%-2*var(--whitespace));
+    margin: 0 auto;
+}
+
+div.newsletter-grid p {
+    font-size: var(--fs-xxl);
+    line-height: 1;
+    margin: 4rem 0;
+}
