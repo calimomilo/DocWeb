@@ -1,0 +1,11 @@
+body > section {
+    min-height: 100vh;
+}
+
+section#artists {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--whitespace);       
+    padding: var(--whitespace);
+}
