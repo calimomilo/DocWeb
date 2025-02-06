@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'ABC Prophet';
+    src: url('../fonts/ABC Prophet Variable/ABCProphetVariable-Trial.woff2');
+}
+
+html {
+    font-family: 'ABC Prophet', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 12px;
+    font-variation-settings: "wght" 650;
+
+    @media screen and (width > 960px) {
+        font-size: 24px;
+    }
+}

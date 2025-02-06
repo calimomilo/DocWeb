@@ -1,0 +1,95 @@
+.artist-card-container {
+    border: 1px solid #ffffff;
+    container-type: inline-size;
+    flex: 1 1 450px;
+    max-width: 100%;
+    min-width: 15rem;
+
+    @media screen and (width > 960px) {
+        margin: var(--whitespace) 0;
+    }
+
+    .artist-card {
+        display: grid;
+        grid-template-areas:
+            "image"
+            "name";
+        position: relative;
+
+        @container (width > 30rem) {
+            grid-template-areas:
+                "image image"
+                "name concert";
+        }
+
+        @container (width > 50rem) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+                "image image name concert";
+        }
+
+        img {
+            grid-area: image;
+            height: 25cqi;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .artist-card--artist {
+            padding: var(--whitespace);
+            grid-area: name;
+
+            @container (width > 30rem) {
+                align-self: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+
+                span {
+                    font-size: 1rem;
+                    font-variation-settings: 'wght' 400;
+                }
+            }
+
+            h2 {
+                font-size: 1rem;
+                font-variation-settings: 'wght' 400;
+            }
+        }
+
+        .artist-card--concert {
+            @container (width > 30rem) {
+                display: flex;
+                flex-direction: column;
+                gap: var(--whitespace);
+                width: 100%;
+                place-self: center;
+                padding: var(--whitespace);
+            }
+
+            &>* {
+                background-color: var(--color-secondary);
+                color: var(--color-primary);
+                font-variation-settings: 'wght' 400;
+                position: absolute;
+                padding: 0 var(--whitespace);
+
+                @container (width > 30rem) {
+                    position: static;
+                    text-align: center;
+                }
+            }
+        }
+
+        .artist-card--concert-time {
+            bottom: -5%;
+            right: 2.5%;
+        }
+
+        .artist-card--concert-venue {
+            top: -5%;
+            left: 2.5%;
+        }
+    }
+}
